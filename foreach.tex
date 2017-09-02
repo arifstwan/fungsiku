@@ -4,7 +4,7 @@
 \usepackage{listings}
 
 \usepackage{xcolor}
-
+% jenis listing LaTeX dengan customisasi
 \lstset
 {
     language={[LaTeX]TeX},
@@ -34,24 +34,18 @@
         node [below,yshift=-2ex] {\i}
         node [above] {\x};
 }
-
 \draw [-latex] (1,0) -- (7.6,0);
-
 \end{tikzpicture}
-
 \begin{tikzpicture}
-
 \foreach \i [evaluate=\i as \x using \i*3.14] in {1,2,...,7} {
     \draw (\i,-4pt) -- (\i,4pt)
         node [below,yshift=-2ex] {\i}
         node [above] {\x};
 }
-
 \draw [-latex] (1,0) -- (7.6,0);
-
 \end{tikzpicture}
 
-
+%--------Listing 1 %---------------------------------------
 \begin{lstlisting}{LaTeX}
 \begin{tikzpicture}
 
@@ -78,7 +72,7 @@
 \end{tikzpicture}
 
 \end{lstlisting}
-
+%----------------Listing selesai----------
 
 % Membuat jangka sorong
 \begin{tikzpicture}[scale=3]
@@ -91,7 +85,7 @@
 { \draw (\label ,0) -- (\label ,-0.1)node[below,scale=0.7]{\x}; 
 }
   \end{tikzpicture}
-%------------listing ---------------------
+%------------listing 2---------------------
 \begin{lstlisting}{LaTeX}
 
 % Membuat jangka sorong
@@ -106,5 +100,5 @@
 }
   \end{tikzpicture}
 \end{lstlisting}
-
+%------------ listing 2 end ---------------
 \end{document}
