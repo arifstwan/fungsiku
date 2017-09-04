@@ -1,0 +1,193 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage{microtype}
+\usepackage[none]{hyphenat}
+\usepackage{verbatim}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{enumitem}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{mathpazo}
+\renewcommand{\rmdefault}{put}
+\usepackage{enumitem}
+\usepackage[dvipsnames,svgnames]{xcolor}
+\usepackage{tkz-euclide}
+\usetkzobj{all}
+\usepackage{graphicx}
+\usepackage{tikz} 	
+\usepackage{adjustbox}
+\usepackage{multicol}
+\usepackage{lipsum}
+\usepackage[left=0.1cm,right=0.7cm,top=0.2cm,bottom=1.5cm]{geometry}
+\usepackage{cancel} \usepackage{xcolor}
+\usepackage{tcolorbox}
+\usetikzlibrary{decorations.pathmorphing,patterns}
+\usetikzlibrary{decorations.pathreplacing,calc}
+ \newcommand\coret[2][red]{\renewcommand\CancelColor{\color{#1}}\cancel{#2}}
+
+%%_------= solusi
+
+
+% Set this =0 to hide, =1 to show
+
+% Set this =0 to hide, =1 to show
+\newtcolorbox{mybox}[1][] { colframe = blue!10, colback = blue!3,boxsep=0pt,left=0.2em, coltitle = blue!20!black, title = \textbf{jawab}, #1, } 
+
+
+\def\showanswers{1}
+\newcommand{\hide}[1]{\ifnum\showanswers=1
+%
+\begin{mybox}
+ #1
+\end{mybox}
+%
+\vspace{\baselineskip}\fi\ifnum\showanswers=0\vspace{2\baselineskip} \hspace{2cm}\fi}
+
+
+
+\newcommand*\cicled[1]{\tikz[baseline=(char.base)]{\node[white, shape=circle, fill=red!80,draw,inner sep=0.5pt](char){#1};}}
+
+\newcommand*\lingkaran[1]{\tikz[baseline=(char.base)]{\node[red, shape=circle,draw,inner sep=0.5pt](char){#1};}\stepcounter{enumii}}
+
+\newcommand*\silang[1]{\tikz[baseline=(char.base)]{
+\draw[red,thick](-0.2,-0.20)--(0.2,0.2);
+\draw[red,thick](-0.2,0.20)--(0.2,-0.2);
+\node[black](char){#1};
+}}
+
+
+\newcommand*\centang[1]{\tikz[baseline=(char.base)]{
+\draw[red, very thick](-0.2,0.1)--(-0.1,0)--(0.2,0.3);
+\node(char){#1};
+}}
+
+\newcommand*\merah[1]{
+\textcolor{red}{#1}}
+\newcommand*\pilgan[1]{
+\begin{enumerate}[label=\Alph*., itemsep=0pt,topsep=0pt,leftmargin=*] #1 
+\end{enumerate}}
+\newcommand*\pernyataan[1]{
+\begin{enumerate}[label=(\arabic*), itemsep=0pt,topsep=0pt,leftmargin=*] #1 
+\end{enumerate}}
+
+
+
+\begin{document}
+
+\setlength{\abovedisplayskip}{0pt}
+\setlength{\belowdisplayskip}{3pt}
+\setlength{\abovedisplayshortskip}{0pt}
+\setlength{\belowdisplayshortskip}{3pt}
+%-----------------------------------------------
+
+ \centering
+  \renewcommand{\arraystretch}{2}
+  \begin{tabular}{  |>{\centering\arraybackslash}m{4cm}|%
+                    >{\centering\arraybackslash}m{11cm}|%
+                    >{\centering\arraybackslash}m{4cm}|%
+  }
+    \hline
+    \vspace{0.15cm} 
+    \tikz[baseline=(char.base)]{
+\draw[green!80!black](-0.3,-0.2) rectangle (0.3,0.2);
+\node[green](char){line};
+} \small{ arifstwan} &       \textbf{Ujian Nasional Fisika 2017 } 
+          & arif.stwan@gmail.com 
+  \\ \hline 
+    
+  \end{tabular}
+\setlength{\columnsep}{0.2cm}
+\renewcommand{\columnseprulecolor}{\color{blue!40}}
+
+\vspace{0.15cm}
+
+\begin{multicols*} {3} 
+ \setlength{\columnseprule}{0.4pt}
+\newcommand{\tikzmark}[2]{\tikz[remember picture,baseline=(#1.base)]{\node[inner sep=0pt] (#1) {#2};}} 
+
+
+\begin{enumerate}[itemsep=0mm]
+\item Dua benda sedang bergerak dengan kecepatan $v_1$ dan $v_2$. Ketika mereka saling berhadapan jarak mereka bertambah dekat 4 m tiap detik. Ketika gerak keduanya searah jarak mereka bertambah dekat 4 meter tiap 10 detik. Hitunglah $v_1$ dan $v_2$ ?
+
+\hide{
+Saat bergerak berhadapan berarti kecepatan relatif antara benda 1 dan benda 2 adalah $v_1+v_2$= 4 m/s. Saat searah berarti selisih kecepatan mereka adalah 4 meter / 10 detik.
+\begin {align*}
+v_1+v_2 &= 4\\
+v_1-v_2 &= 0,4 \\
+2v_1&= 4,4\\
+v_1&=2,2 \text{ m/s}
+\end{align*}
+
+\begin{align*}
+v_1+v_2 &= 4\\
+2,2 + v_2 &=4\\
+v_2 &= 1,8 \text { m/s}
+\end{align*}
+}
+
+\item Sebuah turbin pada suatu pusat pembangkit listrik berotasi 300 rpm. Pada saat listrik mati, turbin tersebut berputar perlahan sampai akhirnya berhenti berputar dalam waktu 600 sekon. Jika percepatan sudut konstan, maka jumlah putaran yang telah dilakukan turbin sampai berhenti . . . .
+\hide{
+$\omega = 300 $ rpm = 600 $\pi$ rad/menit = 10$\pi$ rad/s\\
+$\Delta t = 600$ s dan $\omega'$ = 0 rad/s\\
+Ditanya $\theta$= . . . ?
+\begin{align*}
+\omega' &= \omega + \alpha.t\\
+0 &= 10 \pi + \alpha.600\\
+\alpha &=\frac{-1\pi}{60}
+\end{align*}
+Dengan menggunakan persamaan kinematika rotasi selisih kuadrat kecepatan, maka
+\begin{align*}
+\omega'^2 - \omega^2 &= 2.\alpha.\theta\\
+0- 100 \pi^2 &= \frac{-1\pi}{60}.\theta\\
+\theta &={6000\pi} \text{rad}\\
+\theta &=3000 \text{putaran}
+\end{align*}
+}
+\item Air menetes dari kran ke lantai sejauh 200 cm di bawahnya. Tiap tetesan jatuh dengan interval waktu yang sama. Saat tetesan pertama menumbuk lantai tetesan keempat mulai menetes jauh. Tentukan lokasi tetesan kedua dan ketiga saat tetesan pertama menumbuk lantai!
+\hide{
+\begin{tikzpicture} [scale=0.3]
+\draw (0,20) -- (2,20)--(2,18)--(1,18)--(1,19)--(0,19)--cycle;
+\draw [blue](0,0)--(0,20);
+\end{tikzpicture}
+}
+\item Akbar dan Syafiq hendak menyebrangi sebuah sungai dari titik A ke titik B. Akbar berusaha berenang pada garis lurus AB. Syafiq berenang selalu tegak lurus arus. Ketika tiba di seberang, Syafiq berjalan menuju B. Berapa kecepatan jalan kaki Syafiq jika keduanya tiba di B pada saat yang bersamaan? Kecepatan arus 2 km/jam dan kecepatan Akbar dan Syafiq terhadap air sama yaitu 2,5 km/jam.
+
+
+\item Sebuah benda bermassa 4 kg berada di atas permukaan lantai kasar dengan koefisien gesek statis 0,4 dan koefisien gesek kinetis 0,1. Berpakah besar gaya gesek yang bekerja pada benda jika:
+\begin{enumerate}[label=\alph*., topsep=0pt,itemsep=0pt,leftmargin=*]
+\item Benda ditarik dengan gaya 10 N
+\item Benda ditarik dengan gaya 16 N
+\item Benda ditarik dengan gaya 20 N
+\end{enumerate}
+
+\item Benda bermassa 30 kg diam di atas bidang meendatar kasar ($\mu$=0,25). Suatu gaya sebesar $F$ dikerjakan untuk menarik benda tersebut dan membentuk sudut 37$^o$ terhadap arah horisontal. Batas gaya maksimum yang dbrikan pada benda sehingga benda bergerak mendatar adalah . . . .
+
+\item Benda bermassa 2 kg diam di atas meja kasar dengan koefisien gesekan kinetik 0,2 didorong dari belakang dengan gaya 100 N dengan arah membentuk sudut 37$^o$ terhadap arah mendatar ke bawah. Tinggi meja 1 m dan panjangnya 1 m. JIka gaya bekerja selama benda berada di atas meja, maka jarak horisontal yang ditempuh benda ketika jatuh di lantai (diukur dari tepi meja) adalah . . .
+
+\item Perhatikan gambar di bawah ini !
+
+Berapakah besar tegangan tali yang menghubungkan katrol dengan benda jika ternyata katrol berputar dengan percepatan sudut 5 rad/s$^2$ ?
+
+\item Koordinat titik berat benda di bawah adalah (2,3). Jika $x_1$ = 2, $y_1$ = 2, dan $y_2$ = 8, maka $x_2$ adalah . . .
+
+
+\item Sebuah pompa air 100 watt menyedot air dari kedalaman 9 m. Air disalurkan oleh pompa melalui sebuah pipa dan ditampung dalam sebuah bak berukuran 0,5 m$^3$. Jika bak tersebut penuh setelah dialiri selama 15 menit, efisiensi pompa tersebut adalah. . . .
+
+\item Sebuah peluru ditembakkan dengan sudut elevasi tertentu mempunyai persamaan vektor posisi $r= 30 \hat{\imath} + \left ( 30\sqrt{3t} - 5t^2 \right )\hat{\jmath}$, dengan $t$ dalam sekon dan $r$ dalam meter. Jarak terjauh, tinggi maksimum dan sudut elevasi peluru tersebut adalah . . . .
+
+\item Seorang astronout ketika berada di atas permukaan bumi beratnya 400 N. Suatu saat astronout tersebut naik peswat ruang angkasa yang bergerak vertikal ke atas dengan percepatan 4 m.s$^-1$. Besar gaya berat astronout tersebut ketik berada pada ketinggian R di atas permukaan bumi adalah . . . . (R : jari-jari bumi)
+
+
+\item Energi kinetik suat benda bertambah 300\% ini berarti momeentum benda bertambah . . . \%
+
+
+\end{enumerate}
+\end{multicols*}
+ \vspace{1cm}
+%-------------------------------------------
+
+
+
+
+ \end{document}
