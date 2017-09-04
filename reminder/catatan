@@ -1,3 +1,12 @@
 git add * 
 git commit -m "pesan yang akan diberikan pas commit"
 git push -u  origin master
+
+
+"========== CATATAN VIM ========
+:%s/foo/bar/gc
+
+Change each 'foo' to 'bar', but ask for confirmation first.
+
+kalau mau delete bar di ganti kosong
+:%s/foo//gc
