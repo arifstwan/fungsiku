@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.8.29)  14 SEP 2017 08:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.8.29)  16 SEP 2017 00:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -919,16 +919,16 @@ e
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
 * driver: pdftex
-* paper: a4paper
+* paper: <default>
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(2.84544pt, 574.74559pt, 19.91684pt)
-* v-part:(T,H,B)=(5.69046pt, 796.67726pt, 42.67912pt)
-* \paperwidth=597.50787pt
-* \paperheight=845.04684pt
-* \textwidth=574.74559pt
-* \textheight=796.67726pt
+* h-part:(L,W,R)=(2.84544pt, 591.53271pt, 19.91684pt)
+* v-part:(T,H,B)=(5.69046pt, 746.6004pt, 42.67912pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=591.53271pt
+* \textheight=746.6004pt
 * \oddsidemargin=-69.42455pt
 * \evensidemargin=-69.42455pt
 * \topmargin=-103.57953pt
@@ -936,7 +936,7 @@ e
 * \headsep=25.0pt
 * \topskip=10.0pt
 * \footskip=30.0pt
-* \marginparwidth=57.0pt
+* \marginparwidth=65.0pt
 * \marginparsep=11.0pt
 * \columnsep=10.0pt
 * \skip\footins=9.0pt plus 4.0pt minus 2.0pt
@@ -1005,44 +1005,40 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Overfull \hbox (3.45673pt too wide) in paragraph at lines 96--112
- [][] 
- []
-
-
-Underfull \hbox (badness 6412) in paragraph at lines 192--192
+Underfull \hbox (badness 10000) in paragraph at lines 192--192
 []\OT1/cmss/m/n/10 (+20) Sehingga masing-masing suku memi-liki di-mensi L
  []
 
 
-Underfull \hbox (badness 6542) in paragraph at lines 236--236
+Underfull \hbox (badness 10000) in paragraph at lines 236--236
 []\OT1/cmss/m/n/10 (+20) Untuk keti-dak-pas-tian / ralat pen-guku-ran tung-gal
  []
 
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (5.18567pt too wide) in paragraph at lines 330--347
-[][] [] [] 
- []
-
-[2]
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
 Underfull \hbox (badness 10000) in paragraph at lines 495--495
 []\OT1/cmss/m/n/10 (+20) Untuk menger-jakan soal seperti ini, per-tama
  []
 
 
-Underfull \hbox (badness 7504) in paragraph at lines 495--495
+Underfull \hbox (badness 10000) in paragraph at lines 495--495
 \OT1/cmss/m/n/10 (+20) digam-bar dulu per-pin-da-han petu-gas pos terse-but
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 495--495
+[]\OT1/cmss/m/n/10 (+20) Untuk menghi-tung jum-lah per-pin-da-han-nya di-jum-la
+h
  []
 
 [3] (./PE10-2017-18.aux) ) 
 Here is how much of TeX's memory you used:
- 22546 strings out of 495020
- 451630 string characters out of 6181324
- 688686 words of memory out of 5000000
+ 22542 strings out of 495020
+ 451598 string characters out of 6181324
+ 687768 words of memory out of 5000000
  25172 multiletter control sequences out of 15000+600000
- 19783 words of font info for 75 fonts, out of 8000000 for 9000
+ 19653 words of font info for 73 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  69i,21n,73p,882b,1199s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8
@@ -1057,7 +1053,7 @@ dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist
 lic/amsfonts/latxfont/line10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
 /palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/up
 lri8a.pfb>
-Output written on PE10-2017-18.pdf (3 pages, 111111 bytes).
+Output written on PE10-2017-18.pdf (3 pages, 111063 bytes).
 PDF statistics:
  62 PDF objects out of 1000 (max. 8388607)
  45 compressed objects within 1 object stream
